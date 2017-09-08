@@ -35,9 +35,14 @@ router.get('/', function(req, res, next) {
         img_path:path
     });
     }else{
-    res.json('failed');
-    }
+
+                    var failed_path = '/upload/failed/failed/failed.jpg';
+    res.render('test_index', {
+channel: value_info,
+      img_path:failed_path
     });
+    }
+});
 });
 
 
@@ -93,10 +98,12 @@ router.get('/ajaxpath', function(req, res, next){
                 else if(err){
                 console.log(err.code);
                 console.log(err.stack);
-                next();
+               
+                    var failed_path = {"field_id":"failed","folder_name":"failed", "img_name":"failed.jpg"};
+                res.json(failed_path);
                 }
                 else{
-                    var failed_path = {"folder_name":"failed", "img_name":"failed.jpg"}
+                    var failed_path = {"field_id":"failed","folder_name":"failed", "img_name":"failed.jpg"}
                 res.json(failed_path);
                 }
                 });

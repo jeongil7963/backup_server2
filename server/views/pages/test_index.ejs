@@ -669,7 +669,10 @@
                                        dataType: "json",
                                         error: function() {
                                             var ajax_path;
-                                            ajax_path = null;
+                                            ajax_path = '/upload/failed/failed/failed.jpg';
+                                            console.log(ajax_path);
+                                            $("#camera-info").find("img").attr("src", ajax_path);
+                                            
                                         },
                                         success: function(data) {
                     
