@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "candh",
+    "password": "candh123",
+    "database": "candh",
+    "host": "13.124.28.87",
+    "dialect": "mysql",
+    "port": "3308"
+  },
+  "test": {
+    "username": "candh",
+    "password": "candh123",
+    "database": "candh",
+    "host": "13.124.28.87",
+    "dialect": "mysql",
+    "port": "3308"
+  },
+  "production": {
+    "username": "candh",
+    "password": "candh123",
+    "database": "candh",
+    "host": "13.124.28.87",
+    "dialect": "mysql",
+    "port": "3308"
+  }
+}
